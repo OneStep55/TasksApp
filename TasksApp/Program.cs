@@ -20,12 +20,7 @@ var app = builder.Build();
 
 
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TasksApp V1");
-    c.RoutePrefix = String.Empty;
-    
-});
+app.UseSwaggerUI();
 
 
 app.UseHttpsRedirection();
